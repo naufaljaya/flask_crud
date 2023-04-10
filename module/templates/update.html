@@ -1,0 +1,17 @@
+{% extends 'loyang.html' %}
+
+{% block title %}
+Update Master
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Update Master</h1>
+    <div class="form">
+        <form action="/update/{{ task.id }}" method="post">
+            <input type="text" name="content" id="content" value="{{ task.content }}">
+            <input type="submit" value="Update">
+        </form>
+    </div>
+</div>
+{% endblock %}
